@@ -1,0 +1,8 @@
+# Get the parameter data
+sss_table = payslip._rule_parameter('sss_table')
+result = 0
+
+if isinstance(sss_table, list):
+    for line in sss_table:
+        if contract.wage >= line['range_min'] and contract.wage <= line['range_max']:
+            result = line['employee_share']

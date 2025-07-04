@@ -1,0 +1,5 @@
+#result = payslip.paid_amount
+result = contract.wage
+            
+#def compute_base_pay(contract):
+   # return contract.wage

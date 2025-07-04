@@ -1,0 +1,11 @@
+# Get the parameter data
+wtax_brackets = payslip._rule_parameter('wtax_brackets')
+result = 0
+
+# If it's a list of dictionaries
+if isinstance(wtax_brackets, list):
+    for line in wtax_brackets:
+        if contract.wage >= line['range_min'] and contract.wage <= line['range_max']:
+            # WITHHOLDING TAX = (contract.wage - "over") * percent + add
+            excess = contract.wage - line['over']
+            result = excess * line['percent'] + line['add']
