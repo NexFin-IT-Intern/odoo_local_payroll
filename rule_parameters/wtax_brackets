@@ -1,0 +1,8 @@
+[
+{"range_min":1,"range_max":10417,"add":0,"percent":0,"over":0},
+{"range_min":10417,"range_max":16666,"add":0,"percent":0.15,"over":10417},
+{"range_min":16667,"range_max":33332,"add":937.50,"percent":0.20,"over":16667},
+{"range_min":33333,"range_max":83332,"add":4270.70,"percent":0.25,"over":33333},
+{"range_min":83333,"range_max":333332,"add":16770.70,"percent":0.30,"over":83333},
+{"range_min":333333,"range_max":9999999,"add":91770.70,"percent":0.35,"over":333333}
+]
