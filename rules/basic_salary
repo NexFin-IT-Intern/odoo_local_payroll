@@ -1,5 +1,8 @@
-#result = payslip.paid_amount
+#category: Basic
+#code: BASIC
+#sequence: 1
+
+#condition based on: always true
+
+#amount type: python code
 result = contract.wage
-            
-#def compute_base_pay(contract):
-   # return contract.wage
