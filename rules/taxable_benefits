@@ -1,0 +1,8 @@
+#category: Taxables
+#code: T_TAXABLES
+#sequence: 3
+
+#condition based on: always true
+
+#amount type: python code
+result = categories.get('TAXABLES')

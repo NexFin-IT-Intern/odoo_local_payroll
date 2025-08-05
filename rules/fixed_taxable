@@ -1,0 +1,13 @@
+#category: Basic
+#code: BASIC
+#sequence: 2
+
+#condition based on: python expression
+inp = inputs.get('FIXED_TAXABLE')
+result = bool(inp and inp.amount > 0)
+
+#amount type = python code
+if inputs.get('FIXED_TAXABLE'):
+    result = inputs['FIXED_TAXABLE'].amount * 100
+else:
+    result = 0.0

@@ -1,0 +1,13 @@
+#category: Taxables
+#code: OVERTIME
+#sequence: 2
+
+#condition based on: python expression
+inp = inputs.get('OVERTIME')
+result = bool(inp and inp.amount > 0)
+
+#amount type: python code
+if inputs.get('OVERTIME'):
+    result = inputs['OVERTIME'].amount * 100
+else:
+    result = 0.0
